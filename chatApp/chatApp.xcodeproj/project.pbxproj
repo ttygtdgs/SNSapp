@@ -11,12 +11,12 @@
 		CE17DEE025D3A78B00C5432A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17DEDE25D3A78B00C5432A /* Main.storyboard */; };
 		CE17DEE225D3A79100C5432A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE17DEE125D3A79100C5432A /* Assets.xcassets */; };
 		CE17DEE525D3A79100C5432A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE17DEE325D3A79100C5432A /* LaunchScreen.storyboard */; };
-		CE17DEFD25D3B9CE00C5432A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DEFC25D3B9CE00C5432A /* LoginViewController.swift */; };
-		CE17DF0025D3BA3800C5432A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DEFF25D3BA3800C5432A /* RegisterViewController.swift */; };
 		CE17DF0325D3BB0400C5432A /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DF0225D3BB0400C5432A /* PhotoViewerViewController.swift */; };
 		CE17DF0725D3BB4D00C5432A /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DF0625D3BB4D00C5432A /* VideoPlayerViewController.swift */; };
 		CE17DF0A25D3BBA800C5432A /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DF0925D3BBA800C5432A /* NewConversationViewController.swift */; };
 		CE17DF0D25D3BCAD00C5432A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DF0C25D3BCAD00C5432A /* ProfileViewController.swift */; };
+		CE17DF1325D6447C00C5432A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DF1225D6447C00C5432A /* LoginViewController.swift */; };
+		CE17DF1725D6449200C5432A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17DF1625D6449200C5432A /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +28,12 @@
 		CE17DEE625D3A79100C5432A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE17DEF625D3B53A00C5432A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE17DEF725D3B53B00C5432A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE17DEFC25D3B9CE00C5432A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = chatApp/Controllers/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
-		CE17DEFF25D3BA3800C5432A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = chatApp/Controllers/RegisterViewController.swift; sourceTree = SOURCE_ROOT; };
 		CE17DF0225D3BB0400C5432A /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
 		CE17DF0625D3BB4D00C5432A /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		CE17DF0925D3BBA800C5432A /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		CE17DF0C25D3BCAD00C5432A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CE17DF1225D6447C00C5432A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE17DF1625D6449200C5432A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,8 @@
 		CE17DEF525D3B12600C5432A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE17DEFC25D3B9CE00C5432A /* LoginViewController.swift */,
-				CE17DEFF25D3BA3800C5432A /* RegisterViewController.swift */,
 				CE17DEDC25D3A78B00C5432A /* ConversationsViewController.swift */,
+				CE17DF1B25D6664200C5432A /* Login */,
 				CE17DF0225D3BB0400C5432A /* PhotoViewerViewController.swift */,
 				CE17DF0625D3BB4D00C5432A /* VideoPlayerViewController.swift */,
 				CE17DF0925D3BBA800C5432A /* NewConversationViewController.swift */,
@@ -129,6 +128,15 @@
 				CE17DEE325D3A79100C5432A /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE17DF1B25D6664200C5432A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE17DF1225D6447C00C5432A /* LoginViewController.swift */,
+				CE17DF1625D6449200C5432A /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,12 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE17DF1325D6447C00C5432A /* LoginViewController.swift in Sources */,
 				CE17DF0A25D3BBA800C5432A /* NewConversationViewController.swift in Sources */,
-				CE17DF0025D3BA3800C5432A /* RegisterViewController.swift in Sources */,
+				CE17DF1725D6449200C5432A /* RegisterViewController.swift in Sources */,
 				CE17DF0325D3BB0400C5432A /* PhotoViewerViewController.swift in Sources */,
 				CE17DF0725D3BB4D00C5432A /* VideoPlayerViewController.swift in Sources */,
 				CE17DF0D25D3BCAD00C5432A /* ProfileViewController.swift in Sources */,
-				CE17DEFD25D3B9CE00C5432A /* LoginViewController.swift in Sources */,
 				CE17DEDD25D3A78B00C5432A /* ConversationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_BUNDLE_IDENTIFIER = ttygtd.chatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -380,6 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_BUNDLE_IDENTIFIER = ttygtd.chatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
