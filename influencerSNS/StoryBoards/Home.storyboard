@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="YGa-hc-tkl">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jbH-mw-hLN" customClass="HomeViewController" customModule="influencerSNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lUB-s4-V4M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-if-7AW">
+                                <rect key="frame" x="88" y="184" width="238" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さんようこそ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-FP-bpp">
+                                <rect key="frame" x="155" y="356" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@test.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCw-JB-RDe">
+                                <rect key="frame" x="151.5" y="427" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作成日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av3-6h-Nao">
+                                <rect key="frame" x="181" y="498" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3c-lf-u0i">
+                                <rect key="frame" x="107" y="589" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QvY-eX-l9F"/>
+                                    <constraint firstAttribute="width" constant="200" id="qSI-iS-TID"/>
+                                </constraints>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.94509803920000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedLogoutButton:" destination="jbH-mw-hLN" eventType="touchUpInside" id="CIB-yn-cUU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vfz-bf-w0X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PCw-JB-RDe" firstAttribute="centerX" secondItem="lUB-s4-V4M" secondAttribute="centerX" id="0ox-sM-znp"/>
+                            <constraint firstItem="sdn-if-7AW" firstAttribute="centerX" secondItem="lUB-s4-V4M" secondAttribute="centerX" id="1YH-b1-LKl"/>
+                            <constraint firstItem="5WY-FP-bpp" firstAttribute="centerX" secondItem="lUB-s4-V4M" secondAttribute="centerX" id="43X-XN-oSh"/>
+                            <constraint firstItem="Av3-6h-Nao" firstAttribute="centerX" secondItem="lUB-s4-V4M" secondAttribute="centerX" id="Guf-AG-g4A"/>
+                            <constraint firstItem="Av3-6h-Nao" firstAttribute="top" secondItem="PCw-JB-RDe" secondAttribute="bottom" constant="50" id="M86-Rl-QK0"/>
+                            <constraint firstItem="N3c-lf-u0i" firstAttribute="top" secondItem="Av3-6h-Nao" secondAttribute="bottom" constant="70" id="UWc-OU-jwO"/>
+                            <constraint firstItem="PCw-JB-RDe" firstAttribute="top" secondItem="5WY-FP-bpp" secondAttribute="bottom" constant="50" id="YfP-11-npV"/>
+                            <constraint firstItem="5WY-FP-bpp" firstAttribute="top" secondItem="sdn-if-7AW" secondAttribute="bottom" constant="100" id="cpj-rk-rcf"/>
+                            <constraint firstItem="sdn-if-7AW" firstAttribute="top" secondItem="Vfz-bf-w0X" secondAttribute="top" constant="140" id="qsa-ek-rDb"/>
+                            <constraint firstItem="N3c-lf-u0i" firstAttribute="centerX" secondItem="lUB-s4-V4M" secondAttribute="centerX" id="rTG-nt-g8S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="Av3-6h-Nao" id="OOX-az-Cuo"/>
+                        <outlet property="emailLabel" destination="PCw-JB-RDe" id="4rx-Vl-pZk"/>
+                        <outlet property="logoutButton" destination="N3c-lf-u0i" id="S3E-Sd-yNp"/>
+                        <outlet property="nameLabel" destination="5WY-FP-bpp" id="xel-30-zQg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSY-nk-jUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="-134.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
